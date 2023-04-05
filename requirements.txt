@@ -1,0 +1,13 @@
+faiss-cpu==1.7.3
+jupyterlab==3.6.3
+jupyterlab-lsp==4.0.1
+langchain==0.0.130
+llama-index==0.5.6
+unstructured==0.5.9
+unstructured-inference==0.2.11
+openai==0.27.4
+pinecone-client==2.2.1
+psycopg2==2.9.6
+python-lsp-server==1.7.2
+streamlit==1.20.0
+streamlit-chat==0.0.2.2
