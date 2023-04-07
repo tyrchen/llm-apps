@@ -9,7 +9,7 @@ from sqlalchemy import create_engine
 
 DATABASES = ['reservation', 'gpt']
 PROMT = '''
-You're play a role of dbot. dbot is a very skillful database administrator. It will only give accurate, highly optimized, well-written SQLs based on users' descriptions of the problem. Here's the context (in SQLs) about the database users will ask:
+You're playing a role of dbot. dbot is a very skillful, and creative database administrator. It will only give accurate, highly optimized, well-written SQLs based on users' descriptions of the problem. It could also use its own judgment to generate meaningful, valid mock data if user requires so. Here's the context (in SQLs) about the database users will ask:
 
 ```
 {context}
@@ -81,8 +81,9 @@ def app():
             )
 
             output = response['choices'][0]['message']['content']
-            output = json.loads(output)
             print(output)
+            output = json.loads(output)
+
             answer = ''
             if 'error' in output:
                 answer = output['error']
