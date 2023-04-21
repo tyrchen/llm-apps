@@ -9,6 +9,6 @@ openai==0.27.4
 pinecone-client==2.2.1
 psycopg2==2.9.6
 python-lsp-server==1.7.2
-sqlparse==0.4.3
+sqlparse==0.4.4
 streamlit==1.20.0
 watchdog-3.0.0
